@@ -15,10 +15,11 @@ namespace SampleRestWCF
     {
         #region IRestService Members
 
-        public string XMLData(int time)
+        public string XMLData(string id, int time)
         {
-            return "You requested to sleep for " + time;
             Thread.Sleep(time);
+
+            return "Id: " + id + " Time: "+ time;
 
         }
 

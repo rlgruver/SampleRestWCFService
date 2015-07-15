@@ -16,8 +16,8 @@ namespace SampleRestWCF
         [WebInvoke(Method = "GET",
               ResponseFormat = WebMessageFormat.Xml,
               BodyStyle = WebMessageBodyStyle.Wrapped,
-              UriTemplate = "xml/{time}")]
-        string XMLData(int time);
+              UriTemplate = "xml/{id}/{time}")]
+        string XMLData(string id, int time);
 
     }
 }
